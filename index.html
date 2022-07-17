@@ -7,15 +7,33 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="header">Hello, world</h1>
-        <p class="header-tag">Probability of 256bits It's</p>
-        <span id="prob"></span> cases😮
+        <div>
+            <h1 class="header">Hello, world</h1>
+            <p class="header-tag">Probability of 256bits It's</p>
+            <span id="prob"></span> cases😮
+        </div>
+        <div class="branch">
+            <h1>This is 
+                <span>FeatureA</span>
+                Branch
+            </h1>
+        </div>
     </div>
 
     <style>
         body{
             background-image: linear-gradient(to bottom , rgb(9, 19, 43)  , rgb(29, 34, 71) , rgb(49, 11, 69));
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .branch{
+            /* border: 1px solid; */
+            flex: 1;
+            display: flex;
+            align-items: end;
+            font-size: 1rem;
+        }
+        .branch > h1 > span{
+            color: rgb(236, 131, 131);
         }
         .container{
             display: flex;
