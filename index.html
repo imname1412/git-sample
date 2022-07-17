@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Hello, world</h1>
+        <p class="header-tag">Probability of 256bits It's</p>
+        <span id="prob"></span> cases😮
+    </div>
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom , rgb(9, 19, 43)  , rgb(29, 34, 71) , rgb(49, 11, 69));
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 20px;
+            color: rgb(218, 210, 210);
+        }
+        #prob{
+            color: rgb(71, 71, 241);
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        .header{
+            font-size: 5rem;
+            background-image: linear-gradient(to right , rgb(182, 117, 218), rgb(86, 220, 238)  ,rgb(231, 51, 132));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <script>
+        let propvalue = document.getElementById('prob')
+        propvalue.innerHTML = Math.pow(2 , 256)
+    </script>
+
+</body>
+</html>
